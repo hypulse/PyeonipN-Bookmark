@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "편입n 강의실 북마크 도우미",
+  "version": "1.1",
+  "permissions": ["storage"],
+  "description": "편입n 강의실 페이지에서 사용자가 원하는 강의를 북마크하듯 우선 정렬하고 형광펜 효과를 적용하여 더욱 편리하게 관리할 수 있도록 도와줍니다.",
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["https://www.trn.co.kr/school_lecture.php*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
